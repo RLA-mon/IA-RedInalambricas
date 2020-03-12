@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="cod-container">
+        <div class="form-header">
+            <img src="img/Logo.png" alt="Logo de CodigoMasters">
+            <h1>RFID <span>Register</span></h1>
+        </div>
+        <div class="form-content">
+            <form action="validar.php" class="cod-form"  method="post">
+                <div class="form-title">
+                    <h3>Iniciar Sesión</h3>
+                </div>
+                <div class="input-group">
+                    <input type="email" class="form-input" name="e" id="e" required>
+                    <label class="label" for="correo">Correo</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" class="form-input" name="p" id="p" required>
+                    <label class="label" for="pass"
+                    >Contraseña</label>
+                </div>
+                <div class="input-group">
+                    <label>Admin</label>
+                    <input type="radio" name="validar" id="Admin" value="admin" required>
+                    <label>Usuario</label>
+                    <input type="radio" name="validar" id="Maestro" value="user" required>
+                </div>
+                <div class="input-group">
+                    <input type="submit" class="form-input" value="Iniciar Sesión">
+                </div> 
+            </form>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/form.js"></script>
+    <script type="text/javascript" src="particles.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
